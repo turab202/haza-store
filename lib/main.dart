@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:haza_store/screens/home_screen.dart';
 
 void main() {
-  runApp(HazaStoreApp());
+  runApp(const HazaStoreApp());
 }
 
 class HazaStoreApp extends StatelessWidget {
+  const HazaStoreApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,14 +16,16 @@ class HazaStoreApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        // Modern way to define accent color in Flutter 3+
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.blue,
-        ).copyWith(
-          secondary: Colors.orange, // This replaces the old accentColor
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: GoogleFonts.poppins().fontFamily,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          iconTheme: IconThemeData(color: Colors.black),
         ),
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
