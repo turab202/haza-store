@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../data/products.dart';
-import '../models/product.dart';
+import '../../../data/products.dart';
+import '../../authentication/models/product.dart';
 import 'product_screen.dart';
-import '../widgets/product_card.dart';
+import '../../../common/widgets/product_card.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({Key? key}) : super(key: key);

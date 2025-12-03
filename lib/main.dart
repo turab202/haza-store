@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:haza_store/screens/home_screen.dart';
+import 'package:haza_store/features/shop/screens/home_screen.dart';
 
 void main() {
   runApp(const HazaStoreApp());

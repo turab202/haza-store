@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:haza_store/data/products.dart';
-import 'package:haza_store/models/product.dart';
-import 'package:haza_store/screens/product_screen.dart';
-import 'package:haza_store/screens/cart_screen.dart';
-import 'package:haza_store/screens/search_screen.dart';
-import 'package:haza_store/widgets/header.dart';
-import 'package:haza_store/widgets/product_card.dart';
+import 'package:haza_store/features/authentication/models/product.dart';
+import 'package:haza_store/features/shop/screens/product_screen.dart';
+import 'package:haza_store/features/shop/screens/cart_screen.dart';
+import 'package:haza_store/features/shop/screens/search_screen.dart';
+import 'package:haza_store/common/widgets/header.dart';
+import 'package:haza_store/common/widgets/product_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

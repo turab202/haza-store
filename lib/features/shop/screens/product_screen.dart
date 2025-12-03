@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:haza_store/models/product.dart';
+import 'package:haza_store/features/authentication/models/product.dart';
 
 class ProductScreen extends StatefulWidget {
   final Product product;

@@ -11,6 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  iconsax: ^0.0.8
   cupertino_icons: ^1.0.2
   google_fonts: ^4.0.4
   shimmer: ^3.0.0
@@ -18,6 +19,9 @@ dependencies:
   provider: ^6.1.1
   flutter_rating_bar: ^4.0.1
   badges: ^3.0.0
+  get: ^4.6.5
+  # camera: ^0.10.5+1  # Only if you need basic camera (without AR)
+  # REMOVE ALL AR PLUGINS FOR NOW to make app work for everyone
 
 dev_dependencies:
   flutter_test:
@@ -28,3 +32,26 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/logos/
+    - assets/icons/
+    - assets/fonts/
+ #---------------- LOCAL FONTS -----------------#
+  fonts:
+  - family: Poppins
+    fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Poppins-SemiBold.ttf          
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 800
+
