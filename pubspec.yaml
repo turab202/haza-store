@@ -20,8 +20,13 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   badges: ^3.0.0
   get: ^4.6.5
-  # camera: ^0.10.5+1  # Only if you need basic camera (without AR)
-  # REMOVE ALL AR PLUGINS FOR NOW to make app work for everyone
+  http: ^1.1.0
+  intl: ^0.18.1
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+  get_storage: ^2.1.1
+  flutter_native_splash: ^2.4.7
+ 
 
 dev_dependencies:
   flutter_test:
